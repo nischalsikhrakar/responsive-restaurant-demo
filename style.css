@@ -90,7 +90,7 @@ li:hover {
   justify-content: center;
   gap: 20px;
 
-  background-image: url("../images/taco-hero.jpg");
+  background-image: url("taco-hero.jpg");
   background-size: cover;
   /* height: 400px; */
   grid-area: 1 / 1 / 3 / 3;
