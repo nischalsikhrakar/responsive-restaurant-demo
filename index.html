@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terry's Taco Joint</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <nav id="nav-menu">
+          <button aria-expanded="false" aria-controls="menu">
+            <span class="open">☰</span>
+            <span class="close">×</span>
+            Menu
+          </button>
+          <ul class="menu">
+            <li id="taco">
+              <a href="#">Tacos</a>
+            </li>
+            <li id="beer">
+              <a href="#">Beers</a>
+            </li>
+            <li id="wines">
+              <a href="#">Wines</a>
+            </li>
+            <li id="desserts">
+              <a href="#">Desserts</a>
+            </li>
+            <li id="reservations">
+              <a href="#">Reservations</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="top-content">
+          <header class="hero">
+            <h1><span>Terry's Taco Joint</span></h1>
+            <h3><span>Pretty Good Tacos 🌮!</span></h3>
+          </header>
+          <div class="deals deal1">
+            <p class="price">$1.99</p>
+            <p class="feature-dish">Tacos</p>
+          </div>
+          <div class="deals deal2">
+            <p class="price">$3.99</p>
+            <p class="feature-dish">Kombucha</p>
+          </div>
+        </div>
+      </div>
+      <div class="features">
+        <div class="feature">
+          <h2><span class="icon">🌮</span></h2>
+          <h3>Tacos</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Perferendis, dolore!
+          </p>
+        </div>
+        <div class="feature">
+          <h2><span class="icon">🍻</span></h2>
+          <h3>Beer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            consequuntur.
+          </p>
+        </div>
+        <div class="feature">
+          <h2><span class="icon">🍷</span></h2>
+          <h3>Wine</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor,
+            molestias!
+          </p>
+        </div>
+        <div class="feature">
+          <h2><span class="icon">🎶</span></h2>
+          <h3>Music</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum,
+            quidem.
+          </p>
+        </div>
+      </div>
+      <div class="banner">
+        <img src="images/queso-taco.png" alt="queso" />
+        <div class="details">
+          <h2>Featured Taco</h2>
+          <p>So delicious you'll keep coming back for more!</p>
+          <p>Taco that sends you to heaven.</p>
+          <button>Learn more ➡</button>
+        </div>
+      </div>
+      <div class="gallery">
+        <h2>Instant Grams</h2>
+        <img src="images/gallery-item-1.jpeg" alt="" />
+        <img src="images/gallery-item-2.jpg" alt="" />
+        <img src="images/gallery-item-3.jpg" alt="" />
+        <img src="images/gallery-item-4.jpg" alt="" />
+        <img src="images/gallery-item-5.jpg" alt="" />
+        <img src="images/gallery-item-6.jpg" alt="" />
+        <img src="images/gallery-item-7.jpeg" alt="" />
+        <img src="images/gallery-item-8.jpg" alt="" />
+        <img src="images/gallery-item-9.jpg" alt="" />
+        <img src="images/gallery-item-10.jpg" alt="" />
+        <img src="images/gallery-item-11.jpg" alt="" />
+        <img src="images/gallery-item-12.jpg" alt="" />
+      </div>
+    </div>
+    <script>
+      const navButton = document.querySelector("button[aria-expanded]");
+
+      function toggleNav({ target }) {
+        const expanded =
+          target.getAttribute("aria-expanded") === "true" || false;
+        navButton.setAttribute("aria-expanded", !expanded);
+      }
+
+      navButton.addEventListener("click", toggleNav);
+    </script>
+  </body>
+</html>
